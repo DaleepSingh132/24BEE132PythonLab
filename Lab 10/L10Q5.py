@@ -1,0 +1,11 @@
+print("Name:Daleep Singh")
+print("Roll No.:24BEE132")
+fl = open('word.txt','r')
+fl2 = open('word2.txt','w')
+ch = fl.read(1)
+while ch != "":
+    ch = ch.lower()
+    fl2.write(ch)
+    ch = fl.read(1)
+fl.close()
+fl2.close()
